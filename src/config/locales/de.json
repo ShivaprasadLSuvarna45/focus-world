@@ -1,0 +1,15 @@
+{
+    "name": "Focus World",
+    "email": "E-Mail",
+    "password": "Password",
+    "login": "Anmeldung",
+    "signup": "sich registrieren",
+    "signin": "sich In",
+    "noAccount": "Hab keinen Konto",
+    "errorEmail": "E-Mail ist erforderlich!!!",
+    "errorPassword": "Passwort wird benötigt!!!",
+    "dashboardGreeting": "Willkommen im Dashboard",
+    "userDetails": "Ihre E -Mail ist",
+    "logout": "Ausloggen",
+    "languages": "Sprachen"
+}
