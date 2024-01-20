@@ -51,15 +51,6 @@ const users = {
     hi='hi',
   }
 
-
-
-  const languages :Record<Language,{language:string}>= {
-    en: { language: "English" },
-    de: { language: "Deutsch" },
-    ar: { language: "Arabic" },
-    hi: { language: "India" },
-  };
-
   const language=[
      {key:'en', language: "English" },
      {key:'de', language: "Deutsch" },
@@ -67,4 +58,4 @@ const users = {
      {key:'hi', language: "India" },
   ]
   
-  export { users, languages,language };
+  export { users,language };

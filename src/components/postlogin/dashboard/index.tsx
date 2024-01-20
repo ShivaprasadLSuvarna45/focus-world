@@ -30,7 +30,7 @@ const Dashboard = ({ handleColorChange } : {handleColorChange: any }) => {
             // item
           >
             <Trans i18nKey="description.userDetails">
-              {t("description.userDetails")}
+              {t("userDetails")}
             </Trans>
           </Typography>
           <UserTable />

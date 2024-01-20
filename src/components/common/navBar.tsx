@@ -8,7 +8,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { InputLabel, MenuItem, Select } from "@mui/material";
-import { language as languageList, languages } from "../../constant";
+import { language as languageList } from "../../constant";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import FormControl from "@mui/material/FormControl";
@@ -82,7 +82,7 @@ function NavBar(props: any) {
                   },
                 }}
               >
-                {t("description.languages")}
+                {t("languages")}
               </InputLabel>
               <Select
                 sx={{

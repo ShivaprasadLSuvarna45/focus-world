@@ -123,7 +123,7 @@ const SignIn = (props: any) => {
             >
               <Typography variant="h2" gutterBottom sx={{ mt: "2%" }}>
                 <Box sx={{ fontWeight: "bold", m: 1 }}>
-                  <Trans i18nKey="description.login">
+                  <Trans i18nKey="login">
                     {t("login")}
                   </Trans>
                 </Box>
@@ -140,7 +140,7 @@ const SignIn = (props: any) => {
                           fullWidth
                           label={t("email")}
                           {...register("email", {
-                            required: t("description.errorEmail"),
+                            required: t("errorEmail"),
                             pattern: {
                               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                               message: "Invalid email address",
@@ -157,7 +157,7 @@ const SignIn = (props: any) => {
                     label={t("email")}
                     fullWidth
                     {...register("email", {
-                      required: t("description.errorEmail"),
+                      required: t("errorEmail"),
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         message: "Invalid email address",
