@@ -90,7 +90,6 @@ function NavBar(props: any) {
                     padding: "7% 5%",
                   },
                 }}
-                // item
                 value={language}
                 label="Languages"
                 onChange={handleChange}

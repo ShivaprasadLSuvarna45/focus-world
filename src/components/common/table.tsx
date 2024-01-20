@@ -16,9 +16,9 @@ export default function UserTable() {
       <Table aria-label="caption table">
         <TableRow>
           <TableCell sx={{ fontWeight: "bold" }}>
-            <Trans i18nKey="name">{t("name")}</Trans>
+            <Trans i18nKey="userDetails">{t("userDetails")}</Trans>
           </TableCell>
-          <TableCell align="center">{auth?.currentUser?.displayName}</TableCell>
+          <TableCell align="center">{auth?.currentUser?.displayName ?? "-"}</TableCell>
         </TableRow>
         <TableRow>
           <TableCell sx={{ fontWeight: "bold" }}>

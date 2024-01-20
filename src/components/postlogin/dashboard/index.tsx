@@ -29,7 +29,7 @@ const Dashboard = ({ handleColorChange } : {handleColorChange: any }) => {
             sx={{ mt: "2%", fontWeight: "bold" }}
             // item
           >
-            <Trans i18nKey="description.userDetails">
+            <Trans i18nKey="userDetails">
               {t("userDetails")}
             </Trans>
           </Typography>

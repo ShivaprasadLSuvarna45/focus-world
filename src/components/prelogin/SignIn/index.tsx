@@ -13,7 +13,7 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useForm } from "react-hook-form";
 import { auth } from "../../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { useTranslation, Trans } from "react-i18next";
 import { language } from "../../../constant"
@@ -68,7 +68,7 @@ const SignIn = (props: any) => {
 
     const cacheRtl = createCache({
         key: "muirtl",
-        // stylisPlugins: [prefixer, rtlPlugin as StylisPlugin],
+        stylisPlugins: [prefixer, rtlPlugin as any],
     });
 
       return (
@@ -80,9 +80,8 @@ const SignIn = (props: any) => {
           sm={4}
           md={7}
           sx={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1536599018102-9f803c140fc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8d2FsbHBhcGVyc3x8fHx8fDE3MDU2NDUzNTg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)",
-            backgroundRepeat: "no-repeat",
+            backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+            backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === "light"
                 ? t.palette.grey[50]
@@ -250,16 +249,6 @@ const SignIn = (props: any) => {
                   {t("login")}
                 </Trans>
               </Button>
-              <p>
-                <Trans i18nKey="noAccount">
-                  {t("noAccount")}?
-                </Trans>{" "}
-                <NavLink to="/signup">
-                  <Trans i18nKey="signup">
-                    {t("signup")}
-                  </Trans>
-                </NavLink>
-              </p>
             </form>
           </Container>
         </Grid>

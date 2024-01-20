@@ -7,8 +7,6 @@ import ar from './locales/ar.json';
 import hi from './locales/hi.json';
 import de from './locales/de.json';
 
-const fallbackLng = ["en"];
-
 const resources = {
     en: {
         translation: { ...en }
