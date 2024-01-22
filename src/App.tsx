@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Chip from '@mui/material/Chip';
@@ -19,37 +19,18 @@ import { UserAuthContextProvider, useUserAuth } from "./userAuthContext";
 
 import { users } from "../src/constant";
 
-const ProtectedRoute = ({ children }:{children:JSX.Element}):JSX.Element => {
+const ProtectedRoute = ({ children }: { children: JSX.Element }): JSX.Element => {
   const { user } = useUserAuth();
 
   if (!user) {
-    return <Navigate to="/" /> ;
+    return <Navigate to="/" />;
   }
   return children;
 };
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <SignIn />,
-//   },
-//   {
-//     path: "/dashboard",
-//     element: <Dashboard />,
-//   },
-// ]);
-
 function App() {
 
-  const handleClick = (lan: any) => {
-    let x = t('name');
-    console.log('shiv ', x, lan);
-    i18n.changeLanguage(lan);
-
-  };
-
   const { t } = useTranslation();
-
   const [userLocation, setUserLocation] = useState<string>("en");
 
   const handleColorChange = (location: string) => {
@@ -65,7 +46,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App">
       <ThemeProvider theme={getLocationTheme()}>
         <UserAuthContextProvider>
           <Router>
@@ -90,7 +70,6 @@ function App() {
           </Router>
         </UserAuthContextProvider>
       </ThemeProvider>
-    </div>
     </div>
   );
 }
