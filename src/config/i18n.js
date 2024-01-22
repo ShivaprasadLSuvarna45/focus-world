@@ -5,7 +5,6 @@ import { initReactI18next } from "react-i18next";
 import en from './locales/en.json';
 import ar from './locales/ar.json';
 import hi from './locales/hi.json';
-import de from './locales/de.json';
 
 const resources = {
     en: {
@@ -17,9 +16,6 @@ const resources = {
     hi: {
         translation: { ...hi }
     },
-    de: {
-        translation: { ...de }
-    }
 }
 
 i18n

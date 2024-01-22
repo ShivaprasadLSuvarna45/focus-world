@@ -11,16 +11,6 @@ const users = {
       },
     },
     {
-      name: "de",
-      theme: {
-        palette: {
-          primary: {
-            main: "#C3C3C3",
-          },
-        },
-      },
-    },
-    {
       name: "ar",
       theme: {
         palette: {
@@ -46,16 +36,14 @@ const users = {
 
 export enum Language {
   en = 'en',
-  de = 'de',
   ar = 'ar',
   hi = 'hi',
 }
 
 const language = [
   { key: 'en', language: "English" },
-  { key: 'de', language: "Deutsch" },
   { key: 'ar', language: "Arabic" },
-  { key: 'hi', language: "India" },
+  { key: 'hi', language: "Hindi" },
 ]
 
 export { users, language };
