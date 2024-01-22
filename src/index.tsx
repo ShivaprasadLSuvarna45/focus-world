@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <I18nextProvider i18n={i18n}>
-    <App />
+        <App />
   </I18nextProvider>
 );
 

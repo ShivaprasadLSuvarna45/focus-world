@@ -1,3 +1,15 @@
 {
-    "name": "Focus World"
+    "name": "Focus World",
+    "email": "Email Address",
+    "password": "Password",
+    "login": "Login",
+    "signup": "Sign up",
+    "signin": "Sign In",
+    "noAccount": "Dont have an account",
+    "errorEmail": "Email is Required!!!",
+    "errorPassword": "Password is Required!!!",
+    "dashboardGreeting": "Welcome to Dashboard",
+    "userDetails": "User Details",
+    "logout": "Logout",
+    "languages": "Languages"
 }
